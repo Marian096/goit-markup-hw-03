@@ -7,6 +7,7 @@
     --black-color: #000000;
     --btn-bg-color: #F5F4FA;
     --footer-contacts-color: rgba(255, 255, 255, 0.6);
+    --border-color: #ECECEC;
 }
 
 * {
@@ -112,10 +113,9 @@ body {
     letter-spacing: 0.02em;
     color: var(--title-color);
     text-decoration: none;
-    padding-top: 7px;
-    padding-bottom: 7px;
     padding-top: 32px;
     padding-bottom: 32px;
+    display: block;
 }
 
 .contact-tel {
@@ -241,6 +241,11 @@ body {
     margin-left: 30px;
 }
 
+.services-picture-item {
+    display: block;
+    max-width: 100%;
+}
+
 /* Team */
 
 .team-section {
@@ -266,7 +271,7 @@ body {
 }
 
 .social-list-item {
-    outline: 1px solid #ECECEC;
+    outline: 1px solid var(--border-color);
     border-radius: 0px 0px 4px 4px;
     background-color: var(--primary-bg-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -281,9 +286,8 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
-    padding-top: 30px;
-    padding-bottom: 10px;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .worker-position {
@@ -291,6 +295,10 @@ body {
     line-height: 1.18;
     color: var(--title-color);
     text-align: center;
+}
+
+.content {
+    padding-top: 30px;
     padding-bottom: 30px;
 }
 
@@ -303,7 +311,7 @@ body {
     line-height: 1.19;
     text-decoration: none;
     color: var(--primary-bg-color);
-    display: flex;
+    display: inline-block;
     margin-bottom: 20px;
 }
 
@@ -339,6 +347,11 @@ body {
 
 /* Portfolio */
 
+.portfolio-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .filter-btn {
     cursor: pointer;
     font-weight: 500;
@@ -353,7 +366,6 @@ body {
 }
 
 .filter-list {
-    padding-top: 94px;
     margin-bottom: 50px;
     display: flex;
     justify-content: center;
@@ -375,30 +387,31 @@ body {
     font-size: 18px;
     line-height: 2.0;
     letter-spacing: 0.06em;
-    padding-top: 20px;
-    padding-bottom: 4px;
-    padding-left: 20px;
+    margin-bottom: 4px;
 }
 
 .portfolio-text {
     font-size: 16px;
     line-height: 1.88;
     color: var(--title-color);
-    padding-left: 20px;
-    padding-bottom: 20px;
 }
 
 .portfolio-list {
-    padding-bottom: 94px;
     display: flex;
     flex-wrap: wrap;
-    gap: 27px;
-}
-
-.portfolio-list-item {
-    border: 1px solid #ECECEC;
+    gap: 30px;
 }
 
 .portfolio-list-item:nth-child(3n) {
     margin-right: 0px;
+}
+
+.portfolio-image {
+    display: block;
+    max-width: 100%;
+}
+
+.portfolio-content {
+    padding: 20px 24px 20px;
+    border: 1px solid var(--border-color);
 }
